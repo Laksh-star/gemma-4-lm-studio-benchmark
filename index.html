@@ -155,6 +155,43 @@
       margin-bottom: 4px;
     }
 
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .cta {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 0 18px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 700;
+      letter-spacing: 0.01em;
+      transition: transform 120ms ease, opacity 120ms ease, border-color 120ms ease;
+    }
+
+    .cta:hover {
+      transform: translateY(-1px);
+      opacity: 0.96;
+    }
+
+    .cta-primary {
+      color: #fff9f1;
+      background: linear-gradient(135deg, var(--accent), var(--accent-deep));
+      box-shadow: 0 12px 24px rgba(143, 47, 21, 0.18);
+    }
+
+    .cta-secondary {
+      color: var(--ink);
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+
     .side-summary {
       padding: 24px;
       display: flex;
@@ -207,7 +244,8 @@
 
     .cap-grid,
     .findings-grid,
-    .artifact-grid {
+    .artifact-grid,
+    .glance-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
@@ -231,6 +269,25 @@
       color: var(--muted);
       line-height: 1.6;
       font-size: 0.95rem;
+    }
+
+    .glance-card {
+      padding: 20px;
+      border-radius: 22px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,0.72);
+    }
+
+    .glance-card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 1.05rem;
+    }
+
+    .glance-card p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.65;
     }
 
     .status-table {
@@ -360,6 +417,7 @@
       .cap-grid,
       .findings-grid,
       .artifact-grid,
+      .glance-grid,
       .visual-strip {
         grid-template-columns: 1fr;
       }
@@ -399,6 +457,11 @@
           The goal was not to repeat model claims, but to test what actually held up under local API-driven use: reasoning, coding, JSON, long-context recall,
           tool use, multilingual output, and vision.
         </p>
+        <div class="hero-actions">
+          <a class="cta cta-primary" href="https://github.com/Laksh-star/gemma4_test">Open The Repo</a>
+          <a class="cta cta-secondary" href="#tests">See Results</a>
+          <a class="cta cta-secondary" href="https://github.com/Laksh-star/gemma4_test/tree/main/eval_results">Browse Raw Outputs</a>
+        </div>
         <div class="hero-metrics">
           <div class="metric">
             <strong>24 GB</strong>
@@ -439,6 +502,28 @@
     </section>
 
     <div class="stack">
+      <section class="section panel">
+        <h2>At A Glance</h2>
+        <p class="lede">
+          If you only need the short version, it is this: Gemma was good enough to be useful for text-heavy local work,
+          but not trustworthy enough in this session for strict automation or long-context completion.
+        </p>
+        <div class="glance-grid">
+          <div class="glance-card">
+            <strong>What clearly worked</strong>
+            <p>Reasoning, debugging, coding, multilingual drafting, and practical business comparisons were the strongest parts of the run.</p>
+          </div>
+          <div class="glance-card">
+            <strong>What broke</strong>
+            <p>Strict JSON-only output, end-to-end tool completion, and long-context finalization all failed in practical workflow terms.</p>
+          </div>
+          <div class="glance-card">
+            <strong>What surprised us</strong>
+            <p>The runtime often spent a large part of the token budget in hidden reasoning before visible content appeared, which drove latency and truncation.</p>
+          </div>
+        </div>
+      </section>
+
       <section class="section panel" id="capabilities">
         <h2>What Gemma 4 Is About</h2>
         <p class="lede">
@@ -645,8 +730,14 @@
           </a>
           <a href="README.md">
             <div class="artifact">
-              <strong>Repo Guide</strong>
-              Quick orientation to the companion repo contents.
+              <strong>Readme</strong>
+              Repo overview, evaluator screenshot, and reproduction steps.
+            </div>
+          </a>
+          <a href="README.md">
+            <div class="artifact">
+              <strong>Source HTML</strong>
+              Root copy of the report page for the repository itself.
             </div>
           </a>
         </div>
