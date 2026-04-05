@@ -70,6 +70,16 @@ The local evaluator is a simple Gradio front-end over the LM Studio OpenAI-compa
 
 ![Gemma Local Evaluation Lab home screen](assets/gradio-home.png)
 
+## Live Report
+
+The published GitHub Pages version is here:
+
+- [https://laksh-star.github.io/gemma4_test/](https://laksh-star.github.io/gemma4_test/)
+
+README preview of the live page:
+
+![Gemma 4 LM Studio companion report home](assets/pages-home-live.png)
+
 ## Serving the HTML
 
 The HTML report will not automatically render as a website unless GitHub Pages is enabled for the repository.
