@@ -74,7 +74,7 @@ The local evaluator is a simple Gradio front-end over the LM Studio OpenAI-compa
 
 The published GitHub Pages version is here:
 
-- [https://laksh-star.github.io/gemma4_test/](https://laksh-star.github.io/gemma4_test/)
+- [https://laksh-star.github.io/gemma-4-lm-studio-benchmark/](https://laksh-star.github.io/gemma-4-lm-studio-benchmark/)
 
 README preview of the live page:
 
