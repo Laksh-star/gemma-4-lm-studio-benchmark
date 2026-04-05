@@ -7,7 +7,7 @@ This benchmark is designed for local evaluation of a Gemma-family GGUF loaded in
 - tests that should only run if the loaded model is vision-capable
 - tests that are experimental and should not be treated as authoritative without runtime verification
 
-Use this with [gemma4_lm_studio_eval_app.py](/Users/ln-mini/Downloads/gemma-4-test/gemma4_lm_studio_eval_app.py) or run the prompts manually in LM Studio.
+Use this with [gemma4_lm_studio_eval_app.py](gemma4_lm_studio_eval_app.py) or run the prompts manually in LM Studio.
 
 ## Pre-Run Metadata
 

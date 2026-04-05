@@ -54,20 +54,42 @@ LM Studio version was not captured during the session, so this repo should be re
 
 ## Files
 
-- [index.html](/Users/ln-mini/Downloads/gemma-4-test/index.html): visual one-page report
-- [gemma4_benchmark_summary.md](/Users/ln-mini/Downloads/gemma-4-test/gemma4_benchmark_summary.md): concise benchmark findings
-- [gemma4_lm_studio_benchmark.md](/Users/ln-mini/Downloads/gemma-4-test/gemma4_lm_studio_benchmark.md): benchmark spec and prompts
-- [gemma4_capability_crosscheck.md](/Users/ln-mini/Downloads/gemma-4-test/gemma4_capability_crosscheck.md): cross-check against official Gemma 4 capability claims
-- [gemma4_lm_studio_eval_app.py](/Users/ln-mini/Downloads/gemma-4-test/gemma4_lm_studio_eval_app.py): local Gradio/API test harness
-- [requirements.txt](/Users/ln-mini/Downloads/gemma-4-test/requirements.txt): Python dependencies
-- [eval_results](/Users/ln-mini/Downloads/gemma-4-test/eval_results): saved result artifacts from the session
-- [assets](/Users/ln-mini/Downloads/gemma-4-test/assets): image assets used in the report
+- [index.html](index.html): visual one-page report in the repo root
+- [docs/index.html](docs/index.html): GitHub Pages-ready site entrypoint
+- [gemma4_benchmark_summary.md](gemma4_benchmark_summary.md): concise benchmark findings
+- [gemma4_lm_studio_benchmark.md](gemma4_lm_studio_benchmark.md): benchmark spec and prompts
+- [gemma4_capability_crosscheck.md](gemma4_capability_crosscheck.md): cross-check against official Gemma 4 capability claims
+- [gemma4_lm_studio_eval_app.py](gemma4_lm_studio_eval_app.py): local Gradio/API test harness
+- [requirements.txt](requirements.txt): Python dependencies
+- [eval_results](eval_results): saved result artifacts from the session
+- [assets](assets): image assets used in the report
 
 ## Evaluator UI
 
 The local evaluator is a simple Gradio front-end over the LM Studio OpenAI-compatible API:
 
-![Gemma Local Evaluation Lab home screen](/Users/ln-mini/Downloads/gemma-4-test/assets/gradio-home.png)
+![Gemma Local Evaluation Lab home screen](assets/gradio-home.png)
+
+## Serving the HTML
+
+The HTML report will not automatically render as a website unless GitHub Pages is enabled for the repository.
+
+This repo is now prepared for that:
+
+- Pages-ready site entrypoint: [docs/index.html](docs/index.html)
+- static assets mirrored under `docs/assets/`
+
+To publish it on GitHub Pages:
+
+1. Open the repository settings on GitHub.
+2. Go to `Pages`.
+3. Set the source to `Deploy from a branch`.
+4. Choose branch `main` and folder `/docs`.
+5. Save.
+
+Expected Pages URL after GitHub finishes publishing:
+
+- `https://laksh-star.github.io/gemma4_test/`
 
 ## Reproducing the Tests
 
@@ -86,7 +108,7 @@ python3 -m venv .venv
 .venv/bin/python gemma4_lm_studio_eval_app.py
 ```
 
-5. Run the benchmark prompts from [gemma4_lm_studio_benchmark.md](/Users/ln-mini/Downloads/gemma-4-test/gemma4_lm_studio_benchmark.md).
+5. Run the benchmark prompts from [gemma4_lm_studio_benchmark.md](gemma4_lm_studio_benchmark.md).
 
 ## Notes
 

@@ -42,17 +42,17 @@ The key runtime behavior in this setup is heavy hidden reasoning output. The mod
 
 ## Most Important Files
 
-- [system_control_20260405_165321.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/system_control_20260405_165321.json)
-- [reasoning_20260405_165433.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/reasoning_20260405_165433.json)
-- [coding_20260405_165527.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/coding_20260405_165527.json)
-- [debugging_20260405_165615.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/debugging_20260405_165615.json)
-- [structured_json_20260405_165650.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/structured_json_20260405_165650.json)
-- [multilingual_20260405_165742.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/multilingual_20260405_165742.json)
-- [business_judgment_20260405_165838.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/business_judgment_20260405_165838.json)
-- [tool_calling_20260405_171943.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/tool_calling_20260405_171943.json)
-- [long_context_20260405_173012.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/long_context_20260405_173012.json)
-- [screenshot_ui_small_20260405_174150.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/screenshot_ui_small_20260405_174150.json)
-- [photo_scene_small_20260405_174326.json](/Users/ln-mini/Downloads/gemma-4-test/eval_results/photo_scene_small_20260405_174326.json)
+- [system_control_20260405_165321.json](eval_results/system_control_20260405_165321.json)
+- [reasoning_20260405_165433.json](eval_results/reasoning_20260405_165433.json)
+- [coding_20260405_165527.json](eval_results/coding_20260405_165527.json)
+- [debugging_20260405_165615.json](eval_results/debugging_20260405_165615.json)
+- [structured_json_20260405_165650.json](eval_results/structured_json_20260405_165650.json)
+- [multilingual_20260405_165742.json](eval_results/multilingual_20260405_165742.json)
+- [business_judgment_20260405_165838.json](eval_results/business_judgment_20260405_165838.json)
+- [tool_calling_20260405_171943.json](eval_results/tool_calling_20260405_171943.json)
+- [long_context_20260405_173012.json](eval_results/long_context_20260405_173012.json)
+- [screenshot_ui_small_20260405_174150.json](eval_results/screenshot_ui_small_20260405_174150.json)
+- [photo_scene_small_20260405_174326.json](eval_results/photo_scene_small_20260405_174326.json)
 
 ## Practical Conclusion
 
